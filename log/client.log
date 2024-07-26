@@ -1,0 +1,20 @@
+Dec 20, 2023 2:41:09 AM util.Log check
+INFO: 127.0.0.1
+Dec 20, 2023 2:41:09 AM util.Log err
+SEVERE: Server is not running. Please run the server first.
+Dec 20, 2023 2:41:22 AM util.Log check
+INFO: 127.0.0.1
+Dec 20, 2023 2:41:22 AM util.Log check
+INFO: Connected to the server at 127.0.0.1:8080
+Dec 20, 2023 2:41:22 AM util.Log check
+INFO: Reading from server...
+Dec 20, 2023 2:41:22 AM util.Log check
+INFO: Received headers: 
+Dec 20, 2023 2:41:22 AM util.Log check
+INFO: 200 OK
+Dec 20, 2023 2:41:22 AM util.Log check
+INFO: Content-Type: text/html; charset=utf-8
+Dec 20, 2023 2:41:22 AM util.Log check
+INFO: Content-Length: 5870
+Dec 20, 2023 2:41:22 AM util.Log check
+INFO: Created temporary file: /tmp/student-info12170566077407948430.html

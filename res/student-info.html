@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.svgrepo.com/show/190658/networking-share.svg" type="image/svg+xml">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b2ccd6;
+            font-family: 'Montserrat', sans-serif;
+            background: #000 url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png') repeat top center;
+            animation: animate 200s linear infinite;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            height: 80%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .left-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #0a0a0c;
+            padding: 20px;
+        }
+
+        .left-section h1 {
+            color: #e2fcff;
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .left-section h1:hover {
+            transform: scale(1.05);
+            color: #f0a500;
+        }
+
+        .frame {
+            width: 80%;
+            height: 80%;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .frame img {
+            max-width: 100%;
+            max-height: 100%;
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            animation: zoom 5s ease-in-out infinite;
+        }
+
+        .frame img:hover {
+            transform: scale(1.1);
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            background-color: #0a0a0c;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .right-section ul li {
+            font-size: 1.5em;
+            font-family: "Montserrat", sans-serif;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            justify-content: space-between;
+        }
+
+        .right-section ul li:hover {
+            transform: scale(1.05);
+            color: #f0a500;
+        }
+
+        .name,
+        .id {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .name {
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .id {
+            font-weight: 600;
+            color: #f0a500;
+            margin-left: 60px;
+            text-align: right;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+                height: 90%;
+            }
+
+            .left-section,
+            .right-section {
+                width: 100%;
+                height: 50%;
+            }
+        }
+
+        @keyframes animate {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: 10000px 5000px;
+            }
+        }
+
+        @keyframes zoom {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="left-section">
+            <h1>Team Leader</h1>
+            <div class="frame">
+                <img src="https://i1.sndcdn.com/artworks-GsQK36xoYCsXhNfI-fFgKWw-t500x500.jpg" alt="Image">
+            </div>
+        </section>
+        <section class="right-section">
+            <ul>
+                <li>
+                    <span class="name">Mohanad Ghali</span>
+                    <span class="id">321213360</span>
+                </li>
+                <li>
+                    <span class="name">Nour Ashraf Attia</span>
+                    <span class="id">321213181</span>
+                </li>
+                <li>
+                    <span class="name">Sameh Sherief</span>
+                    <span class="id">321210005</span>
+                </li>
+                <li>
+                    <span class="name">Ahmed Mostafa</span>
+                    <span class="id">321210144</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var title = document.querySelector('.left-section h1');
+            title.style.transition = 'all 2s';
+            title.style.transform = 'scale(1.2)';
+        });
+    </script>
+</body>
+
+</html>
